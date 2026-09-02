@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/common/">
+    <File Path=".gitignore" />
+    <File Path="readme.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/OzonEdu.StockApi/OzonEdu.StockApi.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>
