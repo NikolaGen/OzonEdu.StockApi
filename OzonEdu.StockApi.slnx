@@ -1,11 +1,22 @@
 <Solution>
   <Folder Name="/common/">
     <File Path=".gitignore" />
-    <File Path="dockerfile" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+    <File Path="entrypoint.sh" />
     <File Path="readme.md" />
   </Folder>
   <Folder Name="/src/">
+    <Project Path="src/OzonEdu.StockApi.Domain/OzonEdu.StockApi.Domain.csproj" />
+    <Project Path="src/OzonEdu.StockApi.Grpc/OzonEdu.StockApi.Grpc.csproj" />
+    <Project Path="src/OzonEdu.StockApi.GrpcClient/OzonEdu.StockApi.GrpcClient.csproj" />
+    <Project Path="src/OzonEdu.StockApi.HttpClients/OzonEdu.StockApi.HttpClients.csproj" />
+    <Project Path="src/OzonEdu.StockApi.HttpModels/OzonEdu.StockApi.HttpModels.csproj" />
+    <Project Path="src/OzonEdu.StockApi.Infrastructure/OzonEdu.StockApi.Infrastructure.csproj" />
+    <Project Path="src/OzonEdu.StockApi.Migrator/OzonEdu.StockApi.Migrator.csproj" />
     <Project Path="src/OzonEdu.StockApi/OzonEdu.StockApi.csproj" />
   </Folder>
-  <Folder Name="/tests/" />
+  <Folder Name="/tests/">
+    <Project Path="tests/OzonEdu.StockApi.Domain.Tests/OzonEdu.StockApi.Domain.Tests.csproj" />
+  </Folder>
 </Solution>

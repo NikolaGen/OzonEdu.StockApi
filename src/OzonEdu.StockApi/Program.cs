@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using OzonEdu.StockApi.Infastructure.Extensions;
 
 namespace OzonEdu.StockApi
 {
@@ -12,6 +13,7 @@ namespace OzonEdu.StockApi
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); }).AddInfastructure()
+                .AddHttp();
     }
 }
